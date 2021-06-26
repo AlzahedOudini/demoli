@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/*--------------------------- Color variations ----------------------*/
+/*--------------------------- #7857fe; variable css----------------------*/
+/*-----------------
+  BASES CSS
+-------------------*/
+.mysection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  color: black;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.section-title p {
+  font-size: 1rem;
+}
+
+.active-tab {
+  background-color: #e03a3c;
+  color: #fff;
+}
+
+.active-panel {
+  display: flex !important;
+}
+
+.parallax {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/crash-1651305_1920.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/excavators-2833951_1920.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mybtn {
+  width: auto;
+  padding: 10px 25px;
+  border: 2px solid white;
+  background-color: #ffffff;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.mybtn:hover {
+  background-color: transparent;
+  border: 0px;
+  color: #ffffff;
+}
+
+.mybtnpink {
+  color: #ffffff;
+  width: auto;
+  padding: 10px 25px;
+  background-color: #e03a3c;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.mybtn:hover {
+  background-color: black;
+}
+
+.white {
+  color: #ffffff;
+}
+
+/*-----------------
+  GLOBAL CSS
+-------------------*/
+.video-background-holder {
+  position: relative;
+  background-color: black;
+  min-height: 25rem;
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+}
+
+.video-background-holder video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.references {
+  background-color: #e03a3c;
+  color: #ffffff;
+}
+.references .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.references .container .questions {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.references .container .questions .icony {
+  border: 4px solid #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.references .container .questions .icony i {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.references .container .questions .icony:hover {
+  transform: translateY(-20px);
+}
+.references .container .contact-box {
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+.references .container .services-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.references .container .services-box .icon {
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.references .container .services-box .icon i {
+  color: #fff;
+  font-size: 4rem;
+}
+.references .container .services-box .icon:hover {
+  transform: translateY(-20px);
+}
+
+/*-----------------services CSS-------------------*/
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services .container .tabContainer {
+  display: flex;
+  justify-content: center;
+}
+.services .container .tabContainer .content {
+  width: 80%;
+  height: 400px;
+  box-shadow: 2.828px 2.828px 15px 0px rgba(0, 0, 0, 0.226);
+  color: #ffffff;
+}
+.services .container .tabContainer .content .buttonContainer .tabHeader {
+  height: 60px;
+  width: 100%;
+}
+.services .container .tabContainer .content .buttonContainer button {
+  width: 20%;
+  height: 100%;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.25rem;
+  transition: all 0.4s ease-in-out;
+}
+.services .container .tabContainer .content .tabContent .tabPanel {
+  height: 85%;
+  background-color: #0000009d;
+  padding: 3rem;
+  box-sizing: border-box;
+  display: none;
+  flex-direction: column;
+}
+
+.about {
+  height: auto;
+  position: relative;
+}
+.about .container {
+  position: relative;
+}
+.about .container .content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.about .container .content .box-data {
+  width: 50%;
+  position: relative;
+}
+.about .container .content .box-data h1 {
+  color: #e03a3c;
+  font-weight: 700;
+}
+.about .container .content .box-data p {
+  margin-top: 2rem;
+}
+.about .container .content .box-video {
+  width: 50%;
+}
+.about .container .content .box-video video {
+  width: 100%;
+}
+
+.quality {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  background-color: #b3b3b3;
+}
+.quality .container .content {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+.quality .container .content .box-data {
+  display: block;
+  flex-direction: column;
+  max-width: 80%;
+}
+.quality .container .content .box-data h1 {
+  color: #e03a3c;
+}
+.quality .container .content .box-data a {
+  margin: 0%;
+}
+.quality .container .content .other-box {
+  min-width: 40%;
+}
+.quality .container .content .other-box .list {
+  display: flex;
+  gap: 20px;
+}
+.quality .container .content .other-box .list i {
+  font-size: 40px;
+  color: #e03a3c;
+}
+.quality .container .content .other-box .list1 {
+  margin-top: 20px;
+}
+
+.enjoy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.enjoy .container .content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.enjoy .container .content .box-data {
+  position: relative;
+  width: 50%;
+}
+.enjoy .container .content .box-data h1 {
+  color: #e03a3c;
+}
+.enjoy .container .content .img-box {
+  display: flex;
+  width: 50%;
+  min-height: 500px;
+  position: relative;
+}
+.enjoy .container .content .img-box .carousel-item img::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.363);
+  width: 100%;
+  height: auto;
+}
+
+.estimate {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+.estimate .container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+.estimate .container .content {
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .services .container .tabContainer .content {
+    width: 100%;
+    height: 400px;
+  }
+
+  .enjoy {
+    height: auto;
+  }
+  .enjoy .container .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .enjoy .container .content .box-data {
+    position: relative;
+    width: 100%;
+  }
+  .enjoy .container .content .box-data h1 {
+    color: #e03a3c;
+  }
+  .enjoy .container .content .img-box {
+    display: flex;
+    width: 100%;
+    min-height: auto;
+    position: relative;
+  }
+}
+@media screen and (max-width: 768px) {
+  .references {
+    display: none;
+  }
+
+  .services {
+    height: auto;
+  }
+  .services .container {
+    padding-bottom: 12rem !important;
+  }
+  .services .container .tabContainer .content {
+    width: 100%;
+    height: 400px;
+  }
+  .services .container .tabContainer .content .tabHeader {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .services .container .tabContainer .content .tabHeader button {
+    width: 100%;
+  }
+  .services .container .tabContainer .content .tabContent {
+    margin-top: 10rem;
+  }
+
+  .about {
+    width: 100% !important;
+  }
+  .about .container {
+    padding: 0px !important;
+    margin: 1rem auto;
+  }
+  .about .container .content {
+    display: inline-block;
+    flex-direction: column;
+    width: 100%;
+  }
+  .about .container .content .box-data {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .about .container .content .box-video {
+    width: 100%;
+    position: relative;
+  }
+  .about .container .content .box-video video {
+    position: relative;
+    width: 100%;
+  }
+
+  .quality {
+    height: auto;
+  }
+  .quality .container .content {
+    display: block;
+    width: 100% !important;
+  }
+  .quality .container .content .box-data {
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .quality .container .content .other-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .about {
+    width: 100%;
+  }
+  .about .container {
+    padding: 10px !important;
+    margin: 1rem auto;
+  }
+  .services {
+    height: auto;
+  }
+  .services .container {
+    padding-bottom: 12rem !important;
+  }
+  .services .container .tabContainer .content {
+    width: 100%;
+    height: 400px;
+  }
+  .services .container .tabContainer .content .tabHeader {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .services .container .tabContainer .content .tabHeader button {
+    width: 100%;
+  }
+  .services .container .tabContainer .content .tabContent {
+    padding-top: 2rem;
+  }
+  .services .container .tabContainer .content .tabContent .tabPanel {
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
